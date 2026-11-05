@@ -26,6 +26,7 @@ C {gnd.sym} 330 -20 0 0 {name=l1 lab=0}
 C {code_shown.sym} 240 60 0 0 {name=s1 only_toplevel=false value="
 .lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 .global vdd
+.temp 27
 .ic v(n1)=0
 .tran 1p 5n
 .meas tran period TRIG v(n1) VAL=0.9 RISE=2 TARG v(n1) VAL=0.9 RISE=3
